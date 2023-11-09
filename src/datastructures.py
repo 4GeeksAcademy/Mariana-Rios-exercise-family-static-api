@@ -43,7 +43,8 @@ class FamilyStructure:
 
     def add_member(self, member):
         # fill this method and update the return
-        if not hasattr(member, "id"):
+        print(member["id"])
+        if member["id"] is None:
             member["id"] = self._generateId()
         self._members.append(member)
 
